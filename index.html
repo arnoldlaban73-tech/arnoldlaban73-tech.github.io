@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiventas Colala</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+    /* COLORES EXACTOS DEL LOGO */
+    :root {
+      --azul-logo: #0a2f4a;      /* Azul oscuro del fondo */
+      --naranja-logo: #f5a623;   /* Naranja del logo */
+      --blanco-logo: #ffffff;    /* Blanco del logo */
+      --gris-secundario: #8aa4b8;/* Texto pequeño inferior */
+    }
+
+    body {
+      background-color: var(--azul-logo);
+      color: var(--blanco-logo);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--azul-logo);
+      color: var(--blanco-logo);
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 4px solid var(--naranja-logo);
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-bottom: 25px;
+      color: var(--gris-secundario);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--naranja-logo);
+      color: var(--azul-logo);
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #d48d1c;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      background-color: var(--blanco-logo);
+      color: var(--azul-logo);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--azul-logo);
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: var(--blanco-logo);
+      padding: 25px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      border-top: 5px solid var(--naranja-logo);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: var(--azul-logo);
+    }
+
+    .about {
+      background-color: var(--azul-logo);
+      color: var(--blanco-logo);
+      text-align: center;
+    }
+
+    .about h2 {
+      color: var(--naranja-logo);
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      background: var(--azul-logo);
+      color: var(--gris-secundario);
+      text-align: center;
+      padding: 20px;
+      border-top: 3px solid var(--naranja-logo);
+    }
+
+    /* Botones flotantes WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 26px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 100;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .whatsapp1 { bottom: 90px; right: 20px; }
+    .whatsapp2 { bottom: 20px; right: 20px; }
+
+    @media (max-width: 768px) {
+      .services { flex-direction: column; align-items: center; }
+      header h1 { font-size: 2em; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="Captura de pantalla 2026-02-28 101600.png" alt="Logo Multiventas Colala" class="logo">
+  <h1>MULTIVENTAS COLALA</h1>
+  <p>Venta de pinturas y servicio profesional de pintado para casas, empresas y todo tipo de proyectos.</p>
+  <a href="#contacto" class="btn">Solicita tu Cotización</a>
+</header>
+
+<section>
+  <h2>Nuestros Servicios</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Venta de Pinturas</h3>
+      <p>Amplia variedad de pinturas para interiores y exteriores, esmaltes, barnices y accesorios de alta calidad.</p>
+    </div>
+    <div class="card">
+      <h3>Pintado de Casas</h3>
+      <p>Servicio profesional para renovar y embellecer tu hogar con acabados duraderos y de calidad.</p>
+    </div>
+    <div class="card">
+      <h3>Pintado Empresarial</h3>
+      <p>Trabajos especializados para oficinas, locales comerciales y empresas, cumpliendo tiempos y estándares profesionales.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <h2>Sobre Nosotros</h2>
+  <p>Somos una empresa familiar comprometida con brindar productos de calidad y un servicio responsable. Nuestra experiencia y dedicación nos permiten ofrecer soluciones personalizadas para cada cliente.</p>
+</section>
+
+<section class="contact" id="contacto">
+  <h2>Contáctanos</h2>
+  <p>¿Listo para empezar tu proyecto? Escríbenos o llámanos directamente.</p>
+  <br>
+  <a href="tel:+51979930130" class="btn">Llamar al 979 930 130</a>
+  <a href="tel:+51938433011" class="btn">Llamar al 938 433 011</a>
+  <br><br>
+  <a href="https://wa.me/51979930130" target="_blank" class="btn">WhatsApp 979 930 130</a>
+  <a href="https://wa.me/51938433011" target="_blank" class="btn">WhatsApp 938 433 011</a>
+</section>
+
+<footer>
+  <p>© 2026 Multiventas Colala - Todos los derechos reservados.</p>
+</footer>
+
+<a href="https://wa.me/51979930130" class="whatsapp-float whatsapp1" target="_blank">💬</a>
+<a href="https://wa.me/51938433011" class="whatsapp-float whatsapp2" target="_blank">💬</a>
+
+</body>
+</html>
